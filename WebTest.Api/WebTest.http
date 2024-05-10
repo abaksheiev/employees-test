@@ -1,0 +1,35 @@
+@host = http://localhost:8181
+
+
+GET http://dummy.restapiexample.com/api/v1/employees
+###
+
+
+GET {{host}}/employees/list
+###
+Content-Type: application/json
+###
+
+//Filter By Age
+GET {{host}}/employees/filter?Sort=Age
+###
+Content-Type: application/json
+###
+
+//Filter By Salary
+GET {{host}}/employees/filter?Sort=Salary
+###
+Content-Type: application/json
+###
+
+//Filter By Name
+GET {{host}}/employees/filter?Sort=Name
+###
+Content-Type: application/json
+###
+
+//Filter By Name
+GET {{host}}/employees/filter
+###
+Content-Type: application/json
+###
